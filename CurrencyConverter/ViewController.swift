@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func clearAmount(_ sender: UIButton) {
         inputTextField.text = ""
-        yenLabel.text = "0.00"
+        yenLabel.text = "0.00" /* initially the task only required the clear button clearing the inputTextField. I felt that it would be a better user experience to have all the currency conversions clear as well */
         euroLabel.text = "0.00"
         poundLabel.text = "0.00"
         return
