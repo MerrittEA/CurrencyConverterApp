@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         inputTextField.delegate = self
     }
     
-    // called when return key is pressed - disabled on computer
+    // called when return key is pressed - disabled on computer and may produce an error, ignore error
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
